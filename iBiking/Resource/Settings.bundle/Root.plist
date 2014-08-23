@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>骑客设置</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<true/>
+			<key>Key</key>
+			<string>enabled_preference</string>
+			<key>Title</key>
+			<string>是否允许自动记录骑行路线</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<integer>50</integer>
+			<key>Key</key>
+			<string>slider_preference</string>
+			<key>MaximumValue</key>
+			<integer>100</integer>
+			<key>MaximumValueImage</key>
+			<string></string>
+			<key>MinimumValue</key>
+			<integer>10</integer>
+			<key>MinimumValueImage</key>
+			<string></string>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>关于我们</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>版本号:v0.1</string>
+			<key>Key</key>
+			<string>key_version</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>网   址:www.geeko.sh</string>
+			<key>Key</key>
+			<string>key_url</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>QQ群:88888</string>
+			<key>Key</key>
+			<string>key_qqgroup</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>Title</key>
+	<string>骑客 你身边的骑行管家</string>
+</dict>
+</plist>

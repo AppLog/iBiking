@@ -1,0 +1,114 @@
+/*
+ * This file is part of the SDWebImage package.
+ * (c) Olivier Poitrey <rs@dailymotion.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+#import "UIImageView+WebCache.h"
+#import "SDImageCache.h"
+//#import "QuartzUtils.h"
+@implementation UIImageView (WebCache)
+
+- (void)setImageWithURL:(NSURL *)url
+{
+    [self setImageWithURL:url placeholderImage:nil];
+}
+
+- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder
+{
+//    self.layer.borderColor = [UIColor whiteColor].CGColor;  
+//    self.layer.borderWidth = 1;  
+//    self.layer.shadowColor=[UIColor colorWithRed:204./255. green:204./255. blue:204./255. alpha:1].CGColor;
+//    self.layer.shadowOffset=CGSizeMake(0.5, 0.5);
+//    self.layer.shadowOpacity = 1;
+    
+//    self.layer.borderColor = [UIColor colorWithRed:204./255. green:204./255. blue:204./255. alpha:1].CGColor;  
+//    self.layer.borderWidth = 1;  
+//    self.layer.shadowColor=[UIColor colorWithRed:204./255. green:204./255. blue:204./255. alpha:1].CGColor;
+//    self.layer.shadowOffset=CGSizeMake(0.5, 0.5);
+//    self.layer.shadowOpacity = 1;
+ 
+    
+    UIImage *myCachedImage = [[SDImageCache sharedImageCache] imageFromKey:[url description]];
+    if(myCachedImage)
+    {
+        [self setImage:myCachedImage];
+        return;
+    }    
+    [self setImageWithURL:url placeholderImage:placeholder options:0];
+}
+- (void)setImageWithoutBorderWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder
+{
+    
+    UIImage *myCachedImage = [[SDImageCache sharedImageCache] imageFromKey:[url description]];
+    if(myCachedImage)
+    {
+        [self setImage:myCachedImage];
+        return;
+    }    
+    [self setImageWithURL:url placeholderImage:placeholder options:0];
+}
+
+- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options
+{
+    SDWebImageManager *manager = [SDWebImageManager sharedManager];
+
+    // Remove in progress downloader from queue
+    [manager cancelForDelegate:self];
+    self.contentMode = UIViewContentModeCenter;
+    self.image = placeholder;
+
+    if (url)
+    {
+        
+        [manager downloadWithURL:url delegate:self options:options];
+    }
+}
+
+#if NS_BLOCKS_AVAILABLE
+- (void)setImageWithURL:(NSURL *)url success:(void (^)(UIImage *image))success failure:(void (^)(NSError *error))failure;
+{
+    [self setImageWithURL:url placeholderImage:nil success:success failure:failure];
+}
+
+- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder success:(void (^)(UIImage *image))success failure:(void (^)(NSError *error))failure;
+{
+    [self setImageWithURL:url placeholderImage:placeholder options:0 success:success failure:failure];
+}
+
+- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options success:(void (^)(UIImage *image))success failure:(void (^)(NSError *error))failure;
+{
+    SDWebImageManager *manager = [SDWebImageManager sharedManager];
+
+    // Remove in progress downloader from queue
+    [manager cancelForDelegate:self];
+
+    self.image = placeholder;
+
+    if (url)
+    {
+        [manager downloadWithURL:url delegate:self options:options success:success failure:failure];
+    }
+}
+#endif
+
+- (void)cancelCurrentImageLoad
+{
+    [[SDWebImageManager sharedManager] cancelForDelegate:self];
+}
+
+- (void)webImageManager:(SDWebImageManager *)imageManager didProgressWithPartialImage:(UIImage *)image forURL:(NSURL *)url
+{
+    self.image = image;
+    [self setNeedsLayout];
+}
+
+- (void)webImageManager:(SDWebImageManager *)imageManager didFinishWithImage:(UIImage *)image
+{
+    self.image = image;
+    [self setNeedsLayout];
+}
+
+@end
