@@ -119,12 +119,46 @@
     return [TableFuncName count];
 }
 
+-(float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 40;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Ride Record";
+    static NSString *CellIdentifier = @"BikingFuncIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    if (cell==nil||!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
     
+    int nRow = indexPath.row;
+    if (nRow > [TableFuncName count]) {
+        return nil;
+    }
+    cell.textLabel.text = [self.TableFuncName objectAtIndex:nRow];
     
+    NSString *sSubName = @"";
+    if (!TableFuncSubName ||[TableFuncSubName count]< nRow+1) {
+        
+    }
+    else
+    {
+        sSubName = [TableFuncSubName objectAtIndex:nRow];
+    }
+    cell.detailTextLabel.text = sSubName;
+    
+    NSString *sIconName = @"";
+    if (!TableFuncIcons ||[TableFuncIcons count]< nRow+1) {
+    
+    }
+    else
+    {
+        sIconName = [TableFuncIcons objectAtIndex:nRow];
+    }
+    if (![sIconName isEqualToString:@""]) {
+        cell.imageView.image = [UIImage imageNamed:sIconName];
+    }
     return cell;
 }
 @end
