@@ -88,15 +88,27 @@ static ActionManager *_actionInstace;
     CLLocation *lastLocation = [SysStatus sharedSpeedInfo].LastLocation;
     if (currentLocation.horizontalAccuracy < kCLLocationAccuracyHundredMeters) {
         if (lastLocation) {
+            CGFloat distance = [currentLocation distanceFromLocation:lastLocation];
+            if (distance <2) {
+                //小于两米的路程给忽略掉
+                return;
+            }
             NSTimeInterval dTime = [currentLocation.timestamp timeIntervalSinceDate:lastLocation.timestamp];
             speedInfo.TotalSeconds += dTime;
-            CGFloat distance = [currentLocation distanceFromLocation:lastLocation];
+            
+
             CGFloat currentSpeed = 0;
             CGFloat avgSpeed = 0;
             speedInfo.Distance += distance;
-            if (dTime == 0) {
+            if (dTime == 0 ) {
                 currentSpeed = 0;
-                avgSpeed = speedInfo.Distance / speedInfo.TotalSeconds *3.6;
+                if (speedInfo.TotalSeconds ==0) {
+                    avgSpeed = 0;
+                }
+                else
+                {
+                    avgSpeed = speedInfo.Distance / speedInfo.TotalSeconds *3.6;
+                }
             }
             else
             {

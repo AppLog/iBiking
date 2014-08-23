@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "SysStatus.h"
 #import "BMapKit.h"
+#import "AppDelegate.h"
 
 @interface BikingStatusViewController ()
 {
@@ -50,9 +51,12 @@
     [speedInfo addObserver:self forKeyPath:@"LastLocation"
                    options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld  context:nil];
     
-//    [MapView showsUserLocation];
+    [MapView showsUserLocation];
     MapView.zoomLevel = 19;
     MapView.showMapScaleBar = TRUE;
+    
+
+    self.view.frame = CGRectMake(0, 0, WIN_FRAME.size.width, WIN_FRAME.size.height);
     
     [super viewDidLoad];
 }
@@ -71,6 +75,9 @@
 {
     [MapView viewWillAppear];
     MapView.delegate = self;
+    
+    AppDelegate *delegate = APP;
+    [delegate HideTabBar];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -125,6 +132,8 @@
     }
     else if([keyPath isEqualToString:@"LastLocation"])
     {
+        CLLocationDistance distance =speedInfo.LastLocation.altitude;
+        NowHighLabel.text = [NSString stringWithFormat:@"%0.1f",distance];
         [MapView setCenterCoordinate:speedInfo.LastLocation.coordinate];
         BikingHistory *history = [SysStatus sharedBikingHistory];
         if (history.KeyBikingLocations == nil) {

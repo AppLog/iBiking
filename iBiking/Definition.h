@@ -108,6 +108,10 @@
 #define FONT_TITLE_SUB              [UIFont systemFontOfSize:12.]
 
 
+#define TIP_MESSAGE_TITLE   @""
+#define TIP_SYSTEM_INIT     NSLocalizedString(@"正在检测网络，请稍候", @"")
+
+
 
 #pragma mark 服务器配置定义
 #define SERVER_PATH                         @"http://ihome.cmfmobile.com:8080/sp/custom"

@@ -16,14 +16,14 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="300.25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wI-hV-H8R">
-                        <rect key="frame" x="20" y="38" width="280" height="81"/>
+                        <rect key="frame" x="20" y="44" width="280" height="81"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="43"/>
                         <color key="textColor" red="0.09803922474" green="0.75294125079999996" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pii-7O-LgM">
-                        <rect key="frame" x="238" y="72" width="62" height="31"/>
+                        <rect key="frame" x="238" y="77" width="62" height="31"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.09803922474" green="0.75294125079999996" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
@@ -41,6 +41,9 @@
                                     <color key="titleColor" red="0.09803922474" green="0.75294125079999996" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Func_GoBiking" destination="Ipo-et-ziV" eventType="touchUpInside" id="IAa-sp-CnW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -51,10 +54,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                         <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="Ipo-et-ziV" id="wvq-G0-vyL"/>
-                            <outlet property="delegate" destination="Ipo-et-ziV" id="69m-zq-N68"/>
-                        </connections>
                     </tableView>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -68,6 +67,7 @@
                 <outlet property="BikingTableView" destination="fva-8n-4Um" id="qmN-5d-For"/>
                 <outlet property="GoBikingButton" destination="ayv-s7-3hm" id="knj-9l-OBm"/>
                 <outlet property="TotalBikingDistanceLabel" destination="6wI-hV-H8R" id="gWg-Np-jYQ"/>
+                <outlet property="view" destination="Fga-Gs-0Bm" id="MbY-im-25w"/>
             </connections>
         </viewController>
     </objects>

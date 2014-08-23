@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <viewController id="FDw-np-UUh">
+        <viewController id="FDw-np-UUh" customClass="MeViewController">
             <layoutGuides>
                 <viewControllerLayoutGuide type="top" id="xGd-py-PIo"/>
                 <viewControllerLayoutGuide type="bottom" id="z4m-Ye-UGi"/>
@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rym-t0-8IG">
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rym-t0-8IG" customClass="UIImageView">
                         <rect key="frame" x="0.0" y="20" width="320" height="142"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -36,7 +36,7 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5mS-Lo-P3I">
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5mS-Lo-P3I" customClass="UIImageView">
                         <rect key="frame" x="27" y="125" width="70" height="70"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -144,6 +144,15 @@
             <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="BackgroudImageView" destination="rym-t0-8IG" id="cDv-G6-K2c"/>
+                <outlet property="ClubsCountLabel" destination="e44-p2-muU" id="tY3-V4-WGq"/>
+                <outlet property="FollowerCountLabel" destination="WhK-gk-CGK" id="5DF-VZ-EWp"/>
+                <outlet property="FollowingCountLabel" destination="pn4-VG-k6L" id="OGh-F8-Y31"/>
+                <outlet property="FriendsCountLabel" destination="P4J-oh-nqr" id="jbO-q3-IdQ"/>
+                <outlet property="HeaderIconImageView" destination="5mS-Lo-P3I" id="ja6-91-K0S"/>
+                <outlet property="RemarkLabel" destination="f1z-wZ-0Rx" id="DGD-Vd-Mye"/>
+            </connections>
         </viewController>
     </objects>
 </document>

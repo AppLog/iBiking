@@ -7,6 +7,8 @@
 //
 
 #import "BikingIndexViewController.h"
+#import "BikingStatusViewController.h"
+#import "AppDelegate.h"
 
 @interface BikingIndexViewController ()
 
@@ -35,37 +37,43 @@
     return self;
 }
 
+
+- (NSString *)iconImageName {
+	return @"tab-sport.png";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"运动";
     
     TableFuncIcons = [NSMutableArray arrayWithObjects:
-                      @"BikingHistory.png"
-                      @"RankList.png",
-                      @"SpecialLike.png",nil];
+                      @"sportview_sporthistory.png",
+                      @"sportview_rank.png",
+                      @"sportview_followlive.png",nil];
     
     TableFuncName = [NSMutableArray arrayWithObjects:
-                      @"运动历史"
+                      @"运动历史",
                       @"排行榜",
                       @"特别关注",nil];
     
     TableFuncSubName = [NSMutableArray arrayWithObjects:
-                      @"运动历史"
-                      @"排行榜",
-                      @"特别关注",nil];
+                      @"骑行10.5KM,历时30:15",
+                      @"月度排名125",
+                      @"俞少离西藏还有268KM，离梦想又近了一步。",nil];
     
     TableFuncActionKeys = [NSMutableArray arrayWithObjects:
-                        @"GoBikingHistoryList"
+                        @"GoBikingHistoryList",
                         @"GoRankList",
                         @"GoSessions",nil];
     
     TableFuncActionParameters = [NSMutableArray arrayWithObjects:
-                        @""
+                        @"",
                         @"",
                         @"",nil];
     
     TableFuncActionRemarks = [NSMutableArray arrayWithObjects:
-                        @""
+                        @"",
                         @"",
                         @"",nil];
     
@@ -73,6 +81,16 @@
                         @2,
                         @2,
                         @2,nil];
+    BikingTableView.dataSource = self;
+    BikingTableView.delegate = self;
+    [self setExtraCellLineHidden:BikingTableView];
+}
+
+-(void)setExtraCellLineHidden: (UITableView *)tableViewx
+{
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    [tableViewx setTableFooterView:view];
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,6 +101,8 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    AppDelegate *delegate = APP;
+    [delegate ShowTabBar];
     
 }
 
@@ -105,9 +125,18 @@
 }
 
 //开始骑行
--(void)Func_GoBiking
+-(IBAction)Func_GoBiking
 {
-    
+    NSArray *niblets = [[NSBundle mainBundle] loadNibNamed:@"BikingStatusViewController" owner:self options:NULL];
+    for (id theObject in niblets)
+    {
+        if ([theObject isKindOfClass:[UIViewController class]])
+        {
+            BikingStatusViewController *bikingIndexViewController = (BikingStatusViewController *)theObject;
+            [self.navigationController pushViewController:bikingIndexViewController animated:YES];
+            [bikingIndexViewController Func_StartStopButtonAction];
+        }
+    }
 }
 
 
@@ -121,19 +150,34 @@
 
 -(float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 40;
+    return 65;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"BikingFuncIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    if (cell==nil||!cell) {
+//    static BOOL nibsRegistered = NO;
+//    if (!nibsRegistered) {
+//        UINib *nib = [UINib nibWithNibName:@"UITableViewCell" bundle:nil];
+//        [tableView registerNib:nib forCellReuseIdentifier:CellIdentifier];
+//        nibsRegistered = YES;
+//    }
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!cell) {
+//        NSArray *arr = [[NSBundle mainBundle] loadNibNamed:@"UITableViewCell" owner:self options:nil];
+//        if (arr) {
+//            cell = [arr objectAtIndex:0];
+//        }
+        
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        UIView *view = [[ UIView alloc] init];
+        view.backgroundColor = RGBCOLOR(240, 240, 240);
+        cell.selectedBackgroundView  = view;
     }
     
     int nRow = indexPath.row;
-    if (nRow > [TableFuncName count]) {
+    if (nRow >= [TableFuncName count]) {
         return nil;
     }
     cell.textLabel.text = [self.TableFuncName objectAtIndex:nRow];
@@ -159,6 +203,11 @@
     if (![sIconName isEqualToString:@""]) {
         cell.imageView.image = [UIImage imageNamed:sIconName];
     }
+    
+    cell.textLabel.textColor = RGBCOLOR(28,28, 28);
+    cell.textLabel.font = [UIFont systemFontOfSize:18];
+    cell.detailTextLabel.textColor = RGBCOLOR(98, 98, 98);
+    cell.textLabel.font = [UIFont systemFontOfSize:15];
     return cell;
 }
 @end

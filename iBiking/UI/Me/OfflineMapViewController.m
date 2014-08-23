@@ -24,9 +24,15 @@
     return self;
 }
 
+
+- (NSString *)iconImageName {
+	return @"tab-explore.png";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+     self.title = @"离线地图";
     _offlineMap = [[BMKOfflineMap alloc]init];
     //获取热门城市
     _arrayHotCityData = [_offlineMap getHotCityList];
