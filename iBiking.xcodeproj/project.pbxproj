@@ -124,16 +124,18 @@
 		707B510419A8BE160059AB6C /* zh_bot_barbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 707B510319A8BE160059AB6C /* zh_bot_barbg@2x.png */; };
 		707B510819A8C0670059AB6C /* Background-1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B510619A8C0670059AB6C /* Background-1@2x.jpg */; };
 		707B510919A8C0670059AB6C /* UserHeader-1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B510719A8C0670059AB6C /* UserHeader-1@2x.jpg */; };
-		707B511519A8D37B0059AB6C /* 1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B510B19A8D37B0059AB6C /* 1024.jpg */; };
-		707B511619A8D37B0059AB6C /* Icon-120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B510C19A8D37B0059AB6C /* Icon-120.jpg */; };
-		707B511719A8D37B0059AB6C /* Icon-29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B510D19A8D37B0059AB6C /* Icon-29.jpg */; };
-		707B511819A8D37B0059AB6C /* Icon-29@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B510E19A8D37B0059AB6C /* Icon-29@2x.jpg */; };
-		707B511919A8D37B0059AB6C /* Icon-50.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B510F19A8D37B0059AB6C /* Icon-50.jpg */; };
-		707B511A19A8D37B0059AB6C /* Icon-50@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B511019A8D37B0059AB6C /* Icon-50@2x.jpg */; };
-		707B511B19A8D37B0059AB6C /* Icon-72.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B511119A8D37B0059AB6C /* Icon-72.jpg */; };
-		707B511C19A8D37B0059AB6C /* Icon-72@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B511219A8D37B0059AB6C /* Icon-72@2x.jpg */; };
-		707B511D19A8D37B0059AB6C /* Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B511319A8D37B0059AB6C /* Icon.jpg */; };
-		707B511E19A8D37B0059AB6C /* Icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 707B511419A8D37B0059AB6C /* Icon@2x.jpg */; };
+		70A817AD19A8DA1700D1D892 /* BikingFinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A817AB19A8DA1700D1D892 /* BikingFinishViewController.m */; };
+		70A817AE19A8DA1700D1D892 /* BikingFinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A817AC19A8DA1700D1D892 /* BikingFinishViewController.xib */; };
+		70A817B919A8E02100D1D892 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A817AF19A8E02100D1D892 /* 1024.png */; };
+		70A817BA19A8E02100D1D892 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A817B019A8E02100D1D892 /* Icon-29.png */; };
+		70A817BB19A8E02100D1D892 /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A817B119A8E02100D1D892 /* Icon-29@2x.png */; };
+		70A817BC19A8E02100D1D892 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A817B219A8E02100D1D892 /* Icon-50.png */; };
+		70A817BD19A8E02100D1D892 /* Icon-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A817B319A8E02100D1D892 /* Icon-50@2x.png */; };
+		70A817BE19A8E02100D1D892 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A817B419A8E02100D1D892 /* Icon-72.png */; };
+		70A817BF19A8E02100D1D892 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A817B519A8E02100D1D892 /* Icon-72@2x.png */; };
+		70A817C019A8E02100D1D892 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A817B619A8E02100D1D892 /* Icon-120.png */; };
+		70A817C119A8E02100D1D892 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A817B719A8E02100D1D892 /* Icon.png */; };
+		70A817C219A8E02100D1D892 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A817B819A8E02100D1D892 /* Icon@2x.png */; };
 		70C560E71990D5A500A0E725 /* SysEnums.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C560E61990D5A500A0E725 /* SysEnums.m */; };
 		70C560EA1990D75B00A0E725 /* SysConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C560E91990D75B00A0E725 /* SysConfig.m */; };
 		70C560EC1990DAEB00A0E725 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70C560EB1990DAEB00A0E725 /* Settings.bundle */; };
@@ -149,7 +151,7 @@
 		70C7F19819A8731B0045DD53 /* UINavigationController+icons.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C7F19119A8731B0045DD53 /* UINavigationController+icons.m */; };
 		70C7F19919A8731B0045DD53 /* UIViewController+iconImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C7F19319A8731B0045DD53 /* UIViewController+iconImage.m */; };
 		70C7F1BB19A87F040045DD53 /* BikingHistoryDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C7F1A519A87F040045DD53 /* BikingHistoryDetail.xib */; };
-		70C7F1BC19A87F040045DD53 /* BikingHistoryList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C7F1A619A87F040045DD53 /* BikingHistoryList.xib */; };
+		70C7F1BC19A87F040045DD53 /* BikingHistoryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C7F1A619A87F040045DD53 /* BikingHistoryListViewController.xib */; };
 		70C7F1BD19A87F040045DD53 /* BikingStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C7F1A819A87F040045DD53 /* BikingStatusViewController.m */; };
 		70C7F1BE19A87F040045DD53 /* BikingStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C7F1A919A87F040045DD53 /* BikingStatusViewController.xib */; };
 		70C7F1C019A87F040045DD53 /* Discovery.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70C7F1AD19A87F040045DD53 /* Discovery.xib */; };
@@ -419,16 +421,19 @@
 		707B510319A8BE160059AB6C /* zh_bot_barbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zh_bot_barbg@2x.png"; sourceTree = "<group>"; };
 		707B510619A8C0670059AB6C /* Background-1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Background-1@2x.jpg"; sourceTree = "<group>"; };
 		707B510719A8C0670059AB6C /* UserHeader-1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UserHeader-1@2x.jpg"; sourceTree = "<group>"; };
-		707B510B19A8D37B0059AB6C /* 1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1024.jpg; path = Resource/Icons/1024.jpg; sourceTree = "<group>"; };
-		707B510C19A8D37B0059AB6C /* Icon-120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Icon-120.jpg"; path = "Resource/Icons/Icon-120.jpg"; sourceTree = "<group>"; };
-		707B510D19A8D37B0059AB6C /* Icon-29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Icon-29.jpg"; path = "Resource/Icons/Icon-29.jpg"; sourceTree = "<group>"; };
-		707B510E19A8D37B0059AB6C /* Icon-29@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Icon-29@2x.jpg"; path = "Resource/Icons/Icon-29@2x.jpg"; sourceTree = "<group>"; };
-		707B510F19A8D37B0059AB6C /* Icon-50.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Icon-50.jpg"; path = "Resource/Icons/Icon-50.jpg"; sourceTree = "<group>"; };
-		707B511019A8D37B0059AB6C /* Icon-50@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Icon-50@2x.jpg"; path = "Resource/Icons/Icon-50@2x.jpg"; sourceTree = "<group>"; };
-		707B511119A8D37B0059AB6C /* Icon-72.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Icon-72.jpg"; path = "Resource/Icons/Icon-72.jpg"; sourceTree = "<group>"; };
-		707B511219A8D37B0059AB6C /* Icon-72@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Icon-72@2x.jpg"; path = "Resource/Icons/Icon-72@2x.jpg"; sourceTree = "<group>"; };
-		707B511319A8D37B0059AB6C /* Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Icon.jpg; path = Resource/Icons/Icon.jpg; sourceTree = "<group>"; };
-		707B511419A8D37B0059AB6C /* Icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Icon@2x.jpg"; path = "Resource/Icons/Icon@2x.jpg"; sourceTree = "<group>"; };
+		70A817AA19A8DA1700D1D892 /* BikingFinishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikingFinishViewController.h; sourceTree = "<group>"; };
+		70A817AB19A8DA1700D1D892 /* BikingFinishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BikingFinishViewController.m; sourceTree = "<group>"; };
+		70A817AC19A8DA1700D1D892 /* BikingFinishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BikingFinishViewController.xib; sourceTree = "<group>"; };
+		70A817AF19A8E02100D1D892 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1024.png; path = Resource/Icons/1024.png; sourceTree = "<group>"; };
+		70A817B019A8E02100D1D892 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-29.png"; path = "Resource/Icons/Icon-29.png"; sourceTree = "<group>"; };
+		70A817B119A8E02100D1D892 /* Icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-29@2x.png"; path = "Resource/Icons/Icon-29@2x.png"; sourceTree = "<group>"; };
+		70A817B219A8E02100D1D892 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-50.png"; path = "Resource/Icons/Icon-50.png"; sourceTree = "<group>"; };
+		70A817B319A8E02100D1D892 /* Icon-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-50@2x.png"; path = "Resource/Icons/Icon-50@2x.png"; sourceTree = "<group>"; };
+		70A817B419A8E02100D1D892 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resource/Icons/Icon-72.png"; sourceTree = "<group>"; };
+		70A817B519A8E02100D1D892 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "Resource/Icons/Icon-72@2x.png"; sourceTree = "<group>"; };
+		70A817B619A8E02100D1D892 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120.png"; path = "Resource/Icons/Icon-120.png"; sourceTree = "<group>"; };
+		70A817B719A8E02100D1D892 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resource/Icons/Icon.png; sourceTree = "<group>"; };
+		70A817B819A8E02100D1D892 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resource/Icons/Icon@2x.png"; sourceTree = "<group>"; };
 		70C560E51990D5A500A0E725 /* SysEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysEnums.h; sourceTree = "<group>"; };
 		70C560E61990D5A500A0E725 /* SysEnums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysEnums.m; sourceTree = "<group>"; };
 		70C560E81990D75B00A0E725 /* SysConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysConfig.h; sourceTree = "<group>"; };
@@ -457,7 +462,7 @@
 		70C7F19219A8731B0045DD53 /* UIViewController+iconImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+iconImage.h"; sourceTree = "<group>"; };
 		70C7F19319A8731B0045DD53 /* UIViewController+iconImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+iconImage.m"; sourceTree = "<group>"; };
 		70C7F1A519A87F040045DD53 /* BikingHistoryDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BikingHistoryDetail.xib; sourceTree = "<group>"; };
-		70C7F1A619A87F040045DD53 /* BikingHistoryList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BikingHistoryList.xib; sourceTree = "<group>"; };
+		70C7F1A619A87F040045DD53 /* BikingHistoryListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BikingHistoryListViewController.xib; sourceTree = "<group>"; };
 		70C7F1A719A87F040045DD53 /* BikingStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikingStatusViewController.h; sourceTree = "<group>"; };
 		70C7F1A819A87F040045DD53 /* BikingStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BikingStatusViewController.m; sourceTree = "<group>"; };
 		70C7F1A919A87F040045DD53 /* BikingStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BikingStatusViewController.xib; sourceTree = "<group>"; };
@@ -623,16 +628,16 @@
 		70373A511978098500EA3315 /* iBiking */ = {
 			isa = PBXGroup;
 			children = (
-				707B510B19A8D37B0059AB6C /* 1024.jpg */,
-				707B510C19A8D37B0059AB6C /* Icon-120.jpg */,
-				707B510D19A8D37B0059AB6C /* Icon-29.jpg */,
-				707B510E19A8D37B0059AB6C /* Icon-29@2x.jpg */,
-				707B510F19A8D37B0059AB6C /* Icon-50.jpg */,
-				707B511019A8D37B0059AB6C /* Icon-50@2x.jpg */,
-				707B511119A8D37B0059AB6C /* Icon-72.jpg */,
-				707B511219A8D37B0059AB6C /* Icon-72@2x.jpg */,
-				707B511319A8D37B0059AB6C /* Icon.jpg */,
-				707B511419A8D37B0059AB6C /* Icon@2x.jpg */,
+				70A817AF19A8E02100D1D892 /* 1024.png */,
+				70A817B019A8E02100D1D892 /* Icon-29.png */,
+				70A817B119A8E02100D1D892 /* Icon-29@2x.png */,
+				70A817B219A8E02100D1D892 /* Icon-50.png */,
+				70A817B319A8E02100D1D892 /* Icon-50@2x.png */,
+				70A817B419A8E02100D1D892 /* Icon-72.png */,
+				70A817B519A8E02100D1D892 /* Icon-72@2x.png */,
+				70A817B619A8E02100D1D892 /* Icon-120.png */,
+				70A817B719A8E02100D1D892 /* Icon.png */,
+				70A817B819A8E02100D1D892 /* Icon@2x.png */,
 				70BE27F6198A1E2D00CFD88C /* Database */,
 				70BE27F5198A1E0D00CFD88C /* Entity */,
 				70CA8EFB197FE8000053E723 /* Definition.h */,
@@ -1093,13 +1098,16 @@
 			isa = PBXGroup;
 			children = (
 				70C7F1A519A87F040045DD53 /* BikingHistoryDetail.xib */,
-				70C7F1A619A87F040045DD53 /* BikingHistoryList.xib */,
+				70C7F1A619A87F040045DD53 /* BikingHistoryListViewController.xib */,
 				70C7F1A719A87F040045DD53 /* BikingStatusViewController.h */,
 				70C7F1A819A87F040045DD53 /* BikingStatusViewController.m */,
 				70C7F1A919A87F040045DD53 /* BikingStatusViewController.xib */,
 				70C7F1CA19A87FE80045DD53 /* BikingIndexViewController.h */,
 				70C7F1CB19A87FE80045DD53 /* BikingIndexViewController.m */,
 				70C7F1CC19A87FE80045DD53 /* BikingIndexViewController.xib */,
+				70A817AA19A8DA1700D1D892 /* BikingFinishViewController.h */,
+				70A817AB19A8DA1700D1D892 /* BikingFinishViewController.m */,
+				70A817AC19A8DA1700D1D892 /* BikingFinishViewController.xib */,
 			);
 			path = Biking;
 			sourceTree = "<group>";
@@ -1328,6 +1336,7 @@
 			files = (
 				707B50C619A89F050059AB6C /* btn-login-on@2x.png in Resources */,
 				707B50EE19A89F050059AB6C /* reg-inputbox-bg@2x.png in Resources */,
+				70A817BA19A8E02100D1D892 /* Icon-29.png in Resources */,
 				707B50D219A89F050059AB6C /* btn-share@2x.png in Resources */,
 				707B510119A8BCC10059AB6C /* tab-mine-select@2x.png in Resources */,
 				707B50AD19A89F050059AB6C /* polyline_minpoint@2x.png in Resources */,
@@ -1341,7 +1350,7 @@
 				707B50EF19A89F050059AB6C /* registerbutton@2x.png in Resources */,
 				707B50DC19A89F050059AB6C /* weibo_on@2x.png in Resources */,
 				707B50FF19A8BCC10059AB6C /* tab-sport-select@2x.png in Resources */,
-				70C7F1BC19A87F040045DD53 /* BikingHistoryList.xib in Resources */,
+				70C7F1BC19A87F040045DD53 /* BikingHistoryListViewController.xib in Resources */,
 				70C7F1BE19A87F040045DD53 /* BikingStatusViewController.xib in Resources */,
 				70373A561978098500EA3315 /* InfoPlist.strings in Resources */,
 				707B50AC19A89F050059AB6C /* polyline_endpoint@2x.png in Resources */,
@@ -1353,29 +1362,33 @@
 				707B50DE19A89F050059AB6C /* weixin_on@2x.png in Resources */,
 				706FCE0319A4DF620017086B /* mapapi.bundle in Resources */,
 				707B50B319A89F050059AB6C /* sportend_cancelbutton_hl@2x.png in Resources */,
+				70A817BB19A8E02100D1D892 /* Icon-29@2x.png in Resources */,
 				707B50AE19A89F050059AB6C /* polyline_startpoint@2x.png in Resources */,
 				707B50CF19A89F050059AB6C /* btn-more@2x.png in Resources */,
 				707B50B519A89F050059AB6C /* sportend_finishbutton_hl@2x.png in Resources */,
 				70C7F1BB19A87F040045DD53 /* BikingHistoryDetail.xib in Resources */,
 				707B50D619A89F050059AB6C /* icon-tcweibo-on@2x.png in Resources */,
+				70A817C019A8E02100D1D892 /* Icon-120.png in Resources */,
 				707B50B219A89F050059AB6C /* sportend_cancelbutton@2x.png in Resources */,
 				707B50DA19A89F050059AB6C /* tcweibo_on@2x.png in Resources */,
-				707B511A19A8D37B0059AB6C /* Icon-50@2x.jpg in Resources */,
+				70A817B919A8E02100D1D892 /* 1024.png in Resources */,
 				707B50C719A89F050059AB6C /* btn-login@2x.png in Resources */,
+				70A817BD19A8E02100D1D892 /* Icon-50@2x.png in Resources */,
 				707B50BE19A89F050059AB6C /* type-route@2x.png in Resources */,
 				707B510019A8BCC10059AB6C /* tab-explore-select@2x.png in Resources */,
 				707B50CA19A89F050059AB6C /* btn-loginsina-on@2x.png in Resources */,
 				707B50EC19A89F050059AB6C /* reg-avatar@2x.png in Resources */,
 				707B50E019A89F050059AB6C /* tab-explore@2x.png in Resources */,
 				707B50D719A89F050059AB6C /* icon-weibo-off@2x.png in Resources */,
+				70A817AE19A8DA1700D1D892 /* BikingFinishViewController.xib in Resources */,
 				707B50E419A89F050059AB6C /* tab-mine@2x.png in Resources */,
 				707B50B119A89F050059AB6C /* sportdetailview_usegpsaltitude@2x.png in Resources */,
+				70A817BC19A8E02100D1D892 /* Icon-50.png in Resources */,
 				70C7F1C619A87F040045DD53 /* OfflineMapViewController.xib in Resources */,
 				707B50BB19A89F050059AB6C /* type-at@2x.png in Resources */,
-				707B511B19A8D37B0059AB6C /* Icon-72.jpg in Resources */,
+				70A817C119A8E02100D1D892 /* Icon.png in Resources */,
 				707B50D519A89F050059AB6C /* icon-tcweibo-off@2x.png in Resources */,
 				70C7F1C819A87F040045DD53 /* SettingViewController.xib in Resources */,
-				707B511E19A8D37B0059AB6C /* Icon@2x.jpg in Resources */,
 				707B50C819A89F050059AB6C /* btn-loginqq-on@2x.png in Resources */,
 				70CA8E55197FE75C0053E723 /* geeko.rdb in Resources */,
 				70C7F1C419A87F040045DD53 /* MeViewController.xib in Resources */,
@@ -1393,6 +1406,7 @@
 				707B510419A8BE160059AB6C /* zh_bot_barbg@2x.png in Resources */,
 				707B50ED19A89F050059AB6C /* reg-camera@2x.png in Resources */,
 				707B50BC19A89F050059AB6C /* type-event@2x.png in Resources */,
+				70A817BF19A8E02100D1D892 /* Icon-72@2x.png in Resources */,
 				707B50E619A89F050059AB6C /* tab-sport@2x.png in Resources */,
 				707B50BA19A89F050059AB6C /* sportview_sporthistory@2x.png in Resources */,
 				707B50CD19A89F050059AB6C /* btn-logintc@2x.png in Resources */,
@@ -1401,30 +1415,25 @@
 				707B50B619A89F050059AB6C /* sportend_greenpoint@2x.png in Resources */,
 				707B50E719A89F050059AB6C /* qq_off@2x.png in Resources */,
 				707B50E819A89F050059AB6C /* qq_on@2x.png in Resources */,
-				707B511D19A8D37B0059AB6C /* Icon.jpg in Resources */,
 				70C560EC1990DAEB00A0E725 /* Settings.bundle in Resources */,
 				70373A5E1978098500EA3315 /* Images.xcassets in Resources */,
 				70C7F1C019A87F040045DD53 /* Discovery.xib in Resources */,
 				707B50D419A89F050059AB6C /* icon-qq-on@2x.png in Resources */,
 				707B50AF19A89F050059AB6C /* sportdetail_showbigmap_btn@2x.png in Resources */,
-				707B511919A8D37B0059AB6C /* Icon-50.jpg in Resources */,
 				707B50E219A89F050059AB6C /* tab-map@2x.png in Resources */,
 				707B50DB19A89F050059AB6C /* weibo_off@2x.png in Resources */,
 				707B50D819A89F050059AB6C /* icon-weibo-on@2x.png in Resources */,
-				707B511619A8D37B0059AB6C /* Icon-120.jpg in Resources */,
-				707B511C19A8D37B0059AB6C /* Icon-72@2x.jpg in Resources */,
-				707B511519A8D37B0059AB6C /* 1024.jpg in Resources */,
 				707B50F119A89F050059AB6C /* topictablecell_male@2x.png in Resources */,
 				70C7F1C219A87F040045DD53 /* AboutViewController.xib in Resources */,
 				707B50CB19A89F050059AB6C /* btn-loginsina@2x.png in Resources */,
 				707B50B919A89F050059AB6C /* sportview_rank@2x.png in Resources */,
-				707B511719A8D37B0059AB6C /* Icon-29.jpg in Resources */,
 				707B510219A8BCC10059AB6C /* tab-map-select@2x.png in Resources */,
 				70CA8EF9197FE7A30053E723 /* WeiboSDK.bundle in Resources */,
+				70A817BE19A8E02100D1D892 /* Icon-72.png in Resources */,
 				707B50D119A89F050059AB6C /* btn-search@2x.png in Resources */,
-				707B511819A8D37B0059AB6C /* Icon-29@2x.jpg in Resources */,
 				707B50C319A89F050059AB6C /* topictablecell_praise@2x.png in Resources */,
 				70C7F1C319A87F040045DD53 /* Login.xib in Resources */,
+				70A817C219A8E02100D1D892 /* Icon@2x.png in Resources */,
 				707B50F319A89F050059AB6C /* userdetail-unfollow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1503,6 +1512,7 @@
 				7055ECA119A4E90C00404C36 /* SDWebImageDecoder.m in Sources */,
 				70CA8ECF197FE7960053E723 /* CRNavigationBar.m in Sources */,
 				70CA8ED8197FE7960053E723 /* SBJsonParser.m in Sources */,
+				70A817AD19A8DA1700D1D892 /* BikingFinishViewController.m in Sources */,
 				70CA8E65197FE7690053E723 /* UINavigationItem+Adapt.m in Sources */,
 				707B50FA19A8B8A10059AB6C /* MeViewController.m in Sources */,
 				7055EC9E19A4E90C00404C36 /* FMResultSet.m in Sources */,

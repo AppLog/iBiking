@@ -57,7 +57,7 @@
     _offlineMap.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
     
     _arraylocalDownLoadMapInfo = [NSMutableArray arrayWithArray:[_offlineMap getAllUpdateInfo]] ;
-    
+    [groupTableView reloadData];
     
 }
 
@@ -279,6 +279,10 @@
         BMKOLUpdateElement* updateInfo;
         updateInfo = [_offlineMap getUpdateInfo:state];
         NSLog(@"城市名：%@,下载比例:%d",updateInfo.cityName,updateInfo.ratio);
+        
+        if (updateInfo.ratio == 100) {
+            [groupTableView reloadData];
+        }
     }
     if (type == TYPE_OFFLINE_NEWVER) {
         //id为state的state城市有新版本,可调用update接口进行更新

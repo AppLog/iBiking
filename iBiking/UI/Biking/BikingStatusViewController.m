@@ -55,8 +55,6 @@
     MapView.zoomLevel = 19;
     MapView.showMapScaleBar = TRUE;
     
-
-    self.view.frame = CGRectMake(0, 0, WIN_FRAME.size.width, WIN_FRAME.size.height);
     
     [super viewDidLoad];
 }

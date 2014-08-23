@@ -9,6 +9,7 @@
 #import "BikingIndexViewController.h"
 #import "BikingStatusViewController.h"
 #import "AppDelegate.h"
+#import "SysStatus.h"
 
 @interface BikingIndexViewController ()
 
@@ -104,6 +105,14 @@
     AppDelegate *delegate = APP;
     [delegate ShowTabBar];
     
+    SpeedInfoUnit *speed = [SysStatus sharedSpeedInfo];
+    if (speed.BikingStatus == Start) {
+        GoBikingButton.titleLabel.text = @"查看骑行";
+    }
+    else
+    {
+        GoBikingButton.titleLabel.text = @"骑客，出发！";
+    }
 }
 
 -(void)viewDidAppear:(BOOL)animated

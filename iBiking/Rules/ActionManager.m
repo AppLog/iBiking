@@ -93,6 +93,10 @@ static ActionManager *_actionInstace;
                 //小于两米的路程给忽略掉
                 return;
             }
+            NSLog(@"%@",[NSDate date]);
+            
+            NSLog(@"current TimeStamp:%@",currentLocation.timestamp);
+            NSLog(@"Last TimeStamp:%@",lastLocation.timestamp);
             NSTimeInterval dTime = [currentLocation.timestamp timeIntervalSinceDate:lastLocation.timestamp];
             speedInfo.TotalSeconds += dTime;
             
@@ -116,7 +120,10 @@ static ActionManager *_actionInstace;
                 avgSpeed = speedInfo.Distance / speedInfo.TotalSeconds *3.6;
             }
             
-            
+            if (currentSpeed>60 ||currentSpeed<0) {
+                //平均速度大于60，当前值有异常,忽略
+                return;
+            }
             
             speedInfo.Distance += distance;
             speedInfo.AvgSpeed = avgSpeed;
